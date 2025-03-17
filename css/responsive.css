@@ -1,0 +1,253 @@
+/* responsive.css - Media queries pour le responsive design */
+
+/* Tablettes larges */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Tablettes */
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    /* Header */
+    nav {
+        left: 20px;
+    }
+    
+    .top-bar {
+        right: 20px;
+    }
+    
+    /* Features */
+    .feature-box {
+        min-width: 250px;
+    }
+    
+    /* About */
+    .about-values {
+        gap: 20px;
+    }
+}
+
+/* Mobiles larges */
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    /* Header */
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    nav {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+        order: 3;
+    }
+    
+    .nav-links {
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .top-bar {
+        position: static;
+        order: 2;
+        margin-top: 15px;
+    }
+    
+    .logo-container {
+        order: 1;
+    }
+    
+    /* Hero */
+    .slide-logo img {
+        max-width: 280px;
+    }
+    
+    .slide p {
+        font-size: 16px;
+    }
+    
+    /* About */
+    .about-values {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .value-item {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    /* Stats */
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat-item {
+        width: 100%;
+    }
+    
+    /* Services */
+    .services-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-card {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    /* Features */
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature-box {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    /* Timeline */
+    .timeline:before {
+        left: 30px;
+    }
+    
+    .timeline-content {
+        width: 85%;
+        margin-left: 60px !important;
+        margin-right: 0 !important;
+    }
+    
+    .timeline-marker {
+        left: 30px;
+    }
+    
+    /* Team */
+    .team-member {
+        min-width: 220px;
+    }
+    
+    /* Contact */
+    .contact-content {
+        flex-direction: column;
+    }
+    
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-column {
+        width: 100%;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Header */
+    .logo img {
+        height: 80px;
+    }
+    
+    /* Hero */
+    .slide p {
+        font-size: 14px;
+    }
+    
+    .btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    
+    /* About */
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .section-subtitle {
+        font-size: 18px;
+    }
+    
+    /* Testimonials */
+    .testimonial-content {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+    
+    .testimonial-content:before,
+    .testimonial-content:after {
+        font-size: 40px;
+    }
+    
+    /* CTA */
+    .cta-title {
+        font-size: 26px;
+    }
+    
+    .cta-text {
+        font-size: 16px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .luxury-stats-container {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .luxury-stat-item {
+        min-width: 220px;
+        padding: 40px 20px;
+    }
+    
+    .luxury-stat-number {
+        font-size: 48px;
+    }
+    
+    .plus-sign {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-section {
+        padding: 80px 0;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .luxury-stats-container {
+        gap: 20px;
+    }
+    
+    .luxury-stat-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}

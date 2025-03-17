@@ -1,0 +1,99 @@
+/* header.css - Styles pour l'en-tête et la navigation */
+
+/* Header & Navigation */
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: all var(--transition-fast);
+}
+
+header.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+}
+
+/* Navigation à gauche */
+nav {
+    position: absolute;
+    left: 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.nav-links a:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-light);
+    transition: width var(--transition-fast);
+}
+
+.nav-links a:hover:after {
+    width: 100%;
+}
+
+/* Logo au centre */
+.logo-container {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.08em;
+}
+
+.logo img {
+    height: 120px;
+    transition: height var(--transition-medium);
+}
+
+header.scrolled .logo img {
+    height: 80px;
+}
+
+/* Réseaux sociaux à droite */
+.top-bar {
+    position: absolute;
+    right: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 18px;
+    transition: all var(--transition-fast);
+}
+
+.social-icons a:hover {
+    color: var(--color-gold);
+    transform: translateY(-3px);
+}

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Services Group - Services de Luxe Paris</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <!-- Navigation à gauche -->
+        <nav>
+            <div class="nav-links">
+                <a href="#">ACCUEIL</a>
+                <a href="#services">NOS SERVICES</a>
+                <a href="#about">QUI SOMMES-NOUS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </nav>
+        
+        <!-- Logo au centre -->
+        <div class="logo-container">
+            <a href="#" class="logo">
+                <img src="./assets/YSG_logo.png" alt="Your Services Group Logo">
+            </a>
+        </div>
+        
+        <!-- Réseaux sociaux à droite -->
+        <div class="top-bar">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Section hero avec loader -->
+    <section class="hero">
+        <!-- Loader qui s'affiche pendant le chargement -->
+        <div class="hero-loader">
+            <div class="spinner"></div>
+        </div>
+        
+        <div class="slideshow">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <div class="slide-bg" style="background-image: url('./assets/YRS_hero.png');"></div>
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <img src="./assets/YRS_logo.png" alt="YRS Logo">
+                    </div>
+                    <p>Accédez à notre flotte exclusive de véhicules de prestige, jets privés et yachts. Vivez des expériences d'exception avec nos services de location premium personnalisés.</p>
+                    <a href="#location" class="btn">Explorer nos locations</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('./assets/YDS_hero.png');"></div>
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <img src="./assets/YDS_logo.png" alt="YDS Logo">
+                    </div>
+                    <p>Voyagez avec élégance grâce à nos chauffeurs professionnels. Ponctualité irréprochable, discrétion absolue et véhicules premium pour tous vos déplacements dans Paris et sa région.</p>
+                    <a href="#chauffeur" class="btn">Réserver un chauffeur</a>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('./assets/YCS_hero.png');"></div>
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <img src="./assets/YCS_logo.png" alt="YCS Logo">
+                    </div>
+                    <p>Notre service de conciergerie répond à toutes vos demandes 24h/24. Réservations, organisations d'événements, accès privilégiés - nous transformons vos souhaits en réalité.</p>
+                    <a href="#conciergerie" class="btn">Découvrir la conciergerie</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slideshow Controls -->
+        <div class="slideshow-controls">
+            <div class="slideshow-indicator active" data-slide="0"></div>
+            <div class="slideshow-indicator" data-slide="1"></div>
+            <div class="slideshow-indicator" data-slide="2"></div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about section-dark">
+        <div class="container">
+            <div class="about-header">
+                <h2 class="section-title">Qui sommes nous?</h2>
+                <div class="section-subtitle">Excellence. Discrétion. Élégance.</div>
+            </div>
+            
+            <div class="about-text">
+                <p>YOUR SERVICES GROUP a été fondée en 2020 à Paris, avec l'ambition de <span class="highlight-gold">révolutionner la culture du service</span> dédiée aux professionnels et particuliers.</p>
+                
+                <p>Grâce à notre expertise dans 3 domaines du service haut de gamme - le transport, la location et la conciergerie - nous mettons à disposition de notre clientèle des services personnalisés correspondant en tout point à leurs besoins, avec rigueur, détail et attention.</p>
+            </div>
+            
+            <div class="about-values">
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-gem"></i></div>
+                    <div class="value-title">Excellence</div>
+                    <div class="value-desc">Nous visons l'excellence dans chaque aspect de nos services, sans compromis.</div>
+                </div>
+                
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-user-shield"></i></div>
+                    <div class="value-title">Discrétion</div>
+                    <div class="value-desc">Nous garantissons une confidentialité absolue pour tous nos clients.</div>
+                </div>
+                
+                <div class="value-item">
+                    <div class="value-icon"><i class="fas fa-star"></i></div>
+                    <div class="value-title">Personnalisation</div>
+                    <div class="value-desc">Chaque service est méticuleusement adapté aux exigences spécifiques de notre clientèle.</div>
+                </div>
+            </div>
+            
+            <div class="about-cta">
+                <a href="#services" class="btn">Découvrir nos services</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section NOS CHIFFRES -->
+    <section class="stats-section section-white">
+        <div class="container">
+            <div class="stats-header">
+                <h2 class="section-title">Nos Chiffres</h2>
+                <div class="section-subtitle">Des performances qui témoignent de notre excellence</div>
+            </div>
+            
+            <div class="luxury-stats-container">
+                <div class="luxury-stat-item">
+                    <div class="stat-icon-wrap">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="luxury-stat-number">120<span class="plus-sign">+</span></div>
+                    <div class="luxury-line-separator"></div>
+                    <div class="luxury-stat-title">PARTENAIRES</div>
+                    <div class="luxury-stat-desc">Entreprises prestigieuses qui nous font confiance</div>
+                </div>
+                
+                <div class="luxury-stat-item">
+                    <div class="stat-icon-wrap">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div class="luxury-stat-number">5000<span class="plus-sign">+</span></div>
+                    <div class="luxury-line-separator"></div>
+                    <div class="luxury-stat-title">REQUÊTES ANNUELLES</div>
+                    <div class="luxury-stat-desc">Services personnalisés délivrés avec excellence</div>
+                </div>
+                
+                <div class="luxury-stat-item">
+                    <div class="stat-icon-wrap">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="luxury-stat-number">24</div>
+                    <div class="luxury-line-separator"></div>
+                    <div class="luxury-stat-title">SPÉCIALISTES DÉDIÉS</div>
+                    <div class="luxury-stat-desc">Experts formés aux standards internationaux</div>
+                </div>
+                
+                <div class="luxury-stat-item">
+                    <div class="stat-icon-wrap">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="luxury-stat-number">24<span class="special-separator">/</span>7</div>
+                    <div class="luxury-line-separator"></div>
+                    <div class="luxury-stat-title">DISPONIBILITÉ</div>
+                    <div class="luxury-stat-desc">À votre service à tout moment, sans exception</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-dark">
+        <div class="container">
+            <div class="services-title">
+                <h2 class="section-title">NOS SERVICES</h2>
+                <div class="section-subtitle">Des services d'exception pour une clientèle exigeante</div>
+            </div>
+            
+            <div class="services-cards">
+                <!-- Service de chauffeur -->
+                <div id="chauffeur" class="service-card">
+                    <div class="service-icon-container">
+                        <div class="service-icon-bg"></div>
+                        <div class="service-icon-ring"></div>
+                        <div class="service-icon">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>SERVICES DE<br>CHAUFFEUR PRIVÉ</h3>
+                        <div class="service-divider"></div>
+                        <ul class="service-features">
+                            <li>Transfert aéroport & gare</li>
+                            <li>Mise à disposition</li>
+                            <li>Événements spéciaux</li>
+                            <li>Chauffeurs multilingues</li>
+                        </ul>
+                        <a href="#" class="btn-service">Réserver</a>
+                    </div>
+                </div>
+                
+                <!-- Service de conciergerie -->
+                <div id="conciergerie" class="service-card">
+                    <div class="service-icon-container">
+                        <div class="service-icon-bg"></div>
+                        <div class="service-icon-ring"></div>
+                        <div class="service-icon">
+                            <i class="fas fa-concierge-bell"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>SERVICES DE<br>CONCIERGERIE</h3>
+                        <div class="service-divider"></div>
+                        <ul class="service-features">
+                            <li>Réservations exclusives</li>
+                            <li>Organisation d'événements</li>
+                            <li>Services personnalisés</li>
+                            <li>Disponibilité 24/7</li>
+                        </ul>
+                        <a href="#" class="btn-service">Contactez-nous</a>
+                    </div>
+                </div>
+                
+                <!-- Service de location -->
+                <div id="location" class="service-card">
+                    <div class="service-icon-container">
+                        <div class="service-icon-bg"></div>
+                        <div class="service-icon-ring"></div>
+                        <div class="service-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>SERVICES DE<br>LOCATION</h3>
+                        <div class="service-divider"></div>
+                        <ul class="service-features">
+                            <li>Voitures de luxe</li>
+                            <li>Jets privés</li>
+                            <li>Yachts d'exception</li>
+                            <li>Hélicoptères</li>
+                        </ul>
+                        <a href="#" class="btn-service">Explorer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Expertise Section -->
+    <section class="service-features section-white">
+        <div class="container">
+            <h2 class="section-title fade-in">Notre Expertise</h2>
+            <div class="features-container">
+                <div class="feature-box fade-in delay-200">
+                    <div class="feature-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3 class="feature-title">Véhicules Premium</h3>
+                    <p class="feature-text">Une flotte exclusive de véhicules haut de gamme, régulièrement renouvelée pour votre confort et votre sécurité.</p>
+                    <a href="#chauffeur" class="btn">Découvrir</a>
+                </div>
+                
+                <div class="feature-box fade-in delay-400">
+                    <div class="feature-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3 class="feature-title">Conciergerie 24/7</h3>
+                    <p class="feature-text">Notre équipe répond à toutes vos demandes, des plus simples aux plus exceptionnelles, à tout moment.</p>
+                    <a href="#conciergerie" class="btn">Découvrir</a>
+                </div>
+                
+                <div class="feature-box fade-in delay-600">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="feature-title">Chauffeurs Professionnels</h3>
+                    <p class="feature-text">Des chauffeurs expérimentés, formés aux normes d'excellence du service haut de gamme.</p>
+                    <a href="#chauffeur" class="btn">Découvrir</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Timeline Section -->
+    <section class="timeline-section section-dark">
+        <div class="container">
+            <h2 class="section-title fade-in">Notre Histoire</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content slide-in-right">
+                        <div class="timeline-date">2020</div>
+                        <h3 class="timeline-title">Création de Your Services Group</h3>
+                        <p class="timeline-text">Fondation à Paris avec l'ambition de révolutionner la culture du service de luxe.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content slide-in-left">
+                        <div class="timeline-date">2021</div>
+                        <h3 class="timeline-title">Expansion des services</h3>
+                        <p class="timeline-text">Lancement des services de conciergerie et développement de la flotte de véhicules premium.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content slide-in-right">
+                        <div class="timeline-date">2022</div>
+                        <h3 class="timeline-title">Partenariats internationaux</h3>
+                        <p class="timeline-text">Développement de partenariats avec des hôtels de luxe et des entreprises internationales.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content slide-in-left">
+                        <div class="timeline-date">2023</div>
+                        <h3 class="timeline-title">Certification Excellence</h3>
+                        <p class="timeline-text">Obtention de la certification d'excellence pour nos standards de service.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content slide-in-right">
+                        <div class="timeline-date">2024</div>
+                        <h3 class="timeline-title">Innovation continue</h3>
+                        <p class="timeline-text">Lancement de nouvelles offres de services et intégration de technologies de pointe pour une expérience client inégalée.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content slide-in-left">
+                        <div class="timeline-date">2025</div>
+                        <h3 class="timeline-title">Aujourd'hui</h3>
+                        <p class="timeline-text">Your Services Group est désormais reconnue comme une référence incontournable dans le domaine des services de luxe à Paris.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team Section -->
+    <section class="team-section section-white">
+        <div class="container">
+            <h2 class="section-title fade-in">Notre Équipe</h2>
+            <p class="fade-in delay-200 team-intro">Notre équipe est composée de professionnels passionnés par l'excellence du service et déterminés à vous offrir une expérience exceptionnelle.</p>
+            
+            <div class="team-container">
+                <div class="team-member fade-in delay-300">
+                    <div class="team-photo">
+                        <img src="./assets/team-member1.jpg" alt="Team Member">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Alexandre Martin</h3>
+                        <div class="team-position">Fondateur & CEO</div>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in delay-500">
+                    <div class="team-photo">
+                        <img src="./assets/team-member2.jpg" alt="Team Member">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Sophie Dubois</h3>
+                        <div class="team-position">Directrice des Opérations</div>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in delay-700">
+                    <div class="team-photo">
+                        <img src="./assets/team-member3.jpg" alt="Team Member">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Thomas Laurent</h3>
+                        <div class="team-position">Chef de Conciergerie</div>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials section-dark">
+        <div class="container">
+            <h2 class="section-title fade-in">Témoignages</h2>
+            
+            <div class="testimonial-container">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        Your Services Group a dépassé toutes mes attentes. Leur service de chauffeur privé est impeccable, ponctuel et d'une discrétion exemplaire. Leur attention aux détails fait toute la différence pour mes déplacements professionnels à Paris.
+                    </div>
+                    <div class="testimonial-author">Marc Lefèvre</div>
+                    <div class="testimonial-position">CEO, Groupe Lefèvre</div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        J'ai fait appel à leur service de conciergerie pour organiser une soirée d'entreprise. L'équipe a géré chaque aspect avec un professionnalisme remarquable, trouvant des solutions créatives à chaque défi. Un partenaire de confiance.
+                    </div>
+                    <div class="testimonial-author">Caroline Breton</div>
+                    <div class="testimonial-position">Directrice Marketing, Luxury Brands Inc.</div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        La location de voiture de luxe avec YSG a été une expérience parfaite. La Porsche était en parfait état, livrée à temps à mon hôtel avec toutes les explications nécessaires. Je recommande vivement leurs services.
+                    </div>
+                    <div class="testimonial-author">Jean-Philippe Mercier</div>
+                    <div class="testimonial-position">Architecte d'intérieur</div>
+                </div>
+                
+                <div class="testimonial-dots">
+                    <div class="testimonial-dot active" data-slide="0"></div>
+                    <div class="testimonial-dot" data-slide="1"></div>
+                    <div class="testimonial-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action Section -->
+    <section class="cta-section section-white">
+        <div class="cta-bg" style="background-image: url('./assets/cta-bg.jpg');"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title fade-in">Une Expérience Sur Mesure</h2>
+                <p class="cta-text fade-in delay-200">Découvrez l'excellence de nos services personnalisés. Notre équipe est prête à répondre à vos exigences les plus élevées avec rigueur, détail et attention.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn fade-in delay-400">Contactez-nous</a>
+                    <a href="#services" class="btn fade-in delay-600">Nos Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-dark">
+        <div class="contact-bg"></div>
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h2>Contact</h2>
+                    <p>Pour toute demande, n'hésitez pas à nous contacter. Notre équipe est disponible pour vous répondre dans les plus brefs délais.</p>
+                    
+                    <div class="contact-item fade-in delay-200">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <p>06 87 70 70 87</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item fade-in delay-300">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p>contact@yourservices-group.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item fade-in delay-400">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p>Paris, France</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form slide-in-right">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nom">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Téléphone">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="section-dark">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column fade-in">
+                    <h3>Your Services Group</h3>
+                    <p>Services de luxe à Paris depuis 2020. Transport, location et conciergerie pour une clientèle exigeante.</p>
+                </div>
+                
+                <div class="footer-column fade-in delay-200">
+                    <h3>Liens rapides</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#services">Nos services</a></li>
+                        <li><a href="#about">Qui sommes-nous</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Témoignages</a></li>
+                        <li><a href="#">Réservation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column fade-in delay-400">
+                    <h3>Nos services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#chauffeur">Services de chauffeur privé</a></li>
+                        <li><a href="#conciergerie">Services de conciergerie</a></li>
+                        <li><a href="#location">Services de location</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column fade-in delay-600">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> 06 87 70 70 87</li>
+                        <li><i class="fas fa-envelope"></i> contact@yourservices-group.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Paris, France</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright fade-in delay-800">
+                <p>© 2025 Your Services Group. Tous droits réservés. <a href="#">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
